@@ -1,700 +1,1978 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Dallas Shine Mobile Detailing | Premium Car Detailing in Dallas</title>
-  <meta name="description" content="Professional mobile car detailing in Dallas, TX. Interior detailing, exterior detailing, ceramic coating and complete vehicle care.">
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #08090b;
-      color: #f5f5f5;
-      line-height: 1.6;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .demo-bar {
-      background: #f4c430;
-      color: #111;
-      text-align: center;
-      padding: 8px 15px;
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: .4px;
-    }
-
-    header {
-      position: absolute;
-      width: 100%;
-      top: 38px;
-      left: 0;
-      z-index: 10;
-      padding: 22px 6%;
-    }
-
-    nav {
-      max-width: 1200px;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      font-size: 22px;
-      font-weight: 800;
-      letter-spacing: -.5px;
-    }
-
-    .logo span {
-      color: #f4c430;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 30px;
-      align-items: center;
-      font-size: 14px;
-    }
-
-    .nav-links a:hover {
-      color: #f4c430;
-    }
-
-    .nav-btn {
-      background: #f4c430;
-      color: #111;
-      padding: 12px 19px;
-      border-radius: 7px;
-      font-weight: 700;
-    }
-
-    .hero {
-      min-height: 760px;
-      display: flex;
-      align-items: center;
-      padding: 150px 6% 90px;
-      background:
-        linear-gradient(90deg, rgba(5,6,8,.96) 15%, rgba(5,6,8,.76) 48%, rgba(5,6,8,.35)),
-        url("https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=2000&q=85")
-        center/cover no-repeat;
-    }
-
-    .hero-content {
-      max-width: 1200px;
-      width: 100%;
-      margin: auto;
-    }
-
-    .eyebrow {
-      color: #f4c430;
-      font-size: 13px;
-      font-weight: 800;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      margin-bottom: 18px;
-    }
-
-    h1 {
-      font-size: clamp(46px, 6vw, 78px);
-      line-height: 1.02;
-      max-width: 780px;
-      letter-spacing: -3px;
-      margin-bottom: 25px;
-    }
-
-    .hero p {
-      max-width: 590px;
-      color: #c6c7ca;
-      font-size: 18px;
-      margin-bottom: 35px;
-    }
-
-    .buttons {
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 15px 24px;
-      border-radius: 7px;
-      font-weight: 800;
-      transition: .2s;
-    }
-
-    .btn-primary {
-      background: #f4c430;
-      color: #111;
-    }
-
-    .btn-secondary {
-      border: 1px solid #666;
-      background: rgba(0,0,0,.3);
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
-    }
-
-    section {
-      padding: 90px 6%;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .section-heading {
-      max-width: 680px;
-      margin-bottom: 45px;
-    }
-
-    .section-heading h2 {
-      font-size: clamp(34px, 4vw, 52px);
-      line-height: 1.08;
-      letter-spacing: -1.5px;
-      margin-bottom: 15px;
-    }
-
-    .section-heading p {
-      color: #aeb0b5;
-    }
-
-    .services {
-      background: #0d0f12;
-    }
-
-    .service-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-    }
-
-    .service {
-      background: #15181c;
-      border: 1px solid #24282d;
-      border-radius: 12px;
-      padding: 28px;
-      transition: .25s;
-    }
-
-    .service:hover {
-      transform: translateY(-5px);
-      border-color: #f4c430;
-    }
-
-    .service-number {
-      color: #f4c430;
-      font-weight: 800;
-      font-size: 13px;
-      margin-bottom: 30px;
-    }
-
-    .service h3 {
-      font-size: 21px;
-      margin-bottom: 10px;
-    }
-
-    .service p {
-      color: #9fa2a8;
-      font-size: 14px;
-    }
-
-    .why {
-      background: #08090b;
-    }
-
-    .why-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 70px;
-      align-items: center;
-    }
-
-    .why-image {
-      min-height: 500px;
-      border-radius: 15px;
-      background:
-        linear-gradient(rgba(0,0,0,.15), rgba(0,0,0,.25)),
-        url("https://images.unsplash.com/photo-1613214150384-8f4d5e1b7f7a?auto=format&fit=crop&w=1200&q=85")
-        center/cover;
-    }
-
-    .check-list {
-      list-style: none;
-      margin-top: 30px;
-    }
-
-    .check-list li {
-      padding: 13px 0;
-      border-bottom: 1px solid #24272b;
-      color: #d0d1d4;
-    }
-
-    .check-list li::before {
-      content: "✓";
-      color: #f4c430;
-      font-weight: bold;
-      margin-right: 12px;
-    }
-
-    .packages {
-      background: #101216;
-    }
-
-    .package-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    .package {
-      background: #17191d;
-      border: 1px solid #292c31;
-      border-radius: 13px;
-      padding: 32px;
-    }
-
-    .package.featured {
-      border: 1px solid #f4c430;
-      transform: translateY(-8px);
-    }
-
-    .package-label {
-      color: #f4c430;
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-
-    .package h3 {
-      font-size: 25px;
-      margin: 12px 0;
-    }
-
-    .price {
-      font-size: 32px;
-      font-weight: 800;
-      margin-bottom: 20px;
-    }
-
-    .package ul {
-      list-style: none;
-      color: #b9bbc0;
-      margin-bottom: 25px;
-    }
-
-    .package li {
-      margin: 10px 0;
-    }
-
-    .package li::before {
-      content: "✓";
-      color: #f4c430;
-      margin-right: 9px;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr;
-      gap: 15px;
-    }
-
-    .gallery div {
-      min-height: 230px;
-      border-radius: 12px;
-      background-size: cover;
-      background-position: center;
-    }
-
-    .gallery .large {
-      grid-row: span 2;
-      min-height: 475px;
-    }
-
-    .g1 {
-      background-image: url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=85");
-    }
-
-    .g2 {
-      background-image: url("https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=900&q=85");
-    }
-
-    .g3 {
-      background-image: url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=85");
-    }
-
-    .g4 {
-      background-image: url("https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=900&q=85");
-    }
-
-    .cta {
-      text-align: center;
-      background:
-        linear-gradient(rgba(8,9,11,.9), rgba(8,9,11,.92)),
-        url("https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1800&q=85")
-        center/cover;
-    }
-
-    .cta h2 {
-      font-size: clamp(38px, 5vw, 60px);
-      margin-bottom: 15px;
-    }
-
-    .cta p {
-      color: #b8babf;
-      max-width: 600px;
-      margin: 0 auto 30px;
-    }
-
-    footer {
-      padding: 45px 6%;
-      background: #050608;
-      border-top: 1px solid #1d2024;
-    }
-
-    .footer-inner {
-      max-width: 1200px;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      gap: 30px;
-      flex-wrap: wrap;
-    }
-
-    .footer-text {
-      color: #777b82;
-      font-size: 13px;
-      margin-top: 8px;
-    }
-
-    @media (max-width: 900px) {
-      .nav-links a:not(.nav-btn) {
-        display: none;
-      }
-
-      .service-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .why-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .package-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .package.featured {
-        transform: none;
-      }
-    }
-
-    @media (max-width: 600px) {
-      .hero {
-        min-height: 700px;
-      }
-
-      h1 {
-        letter-spacing: -2px;
-      }
-
-      section {
-        padding: 65px 5%;
-      }
-
-      .service-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .gallery {
-        grid-template-columns: 1fr;
-      }
-
-      .gallery .large {
-        min-height: 300px;
-      }
-
-      .gallery div {
-        min-height: 220px;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dallas Shine | Mobile Car Detailing Demo</title>
+<meta name="description" content="Demo website for a premium mobile car detailing business in Dallas, Texas. Sample project created by DetailsFlow Agency.">
+<meta name="theme-color" content="#0a0a0b">
+
+<style>
+:root{
+  --bg:#08090a;
+  --panel:#111315;
+  --panel2:#17191c;
+  --line:#292d32;
+  --text:#f7f7f5;
+  --muted:#aeb2b8;
+  --gold:#f6c532;
+  --gold2:#ffd95c;
+  --max:1180px;
+  --radius:18px;
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+
+body.menu-open{
+  overflow:hidden;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+img{
+  display:block;
+  max-width:100%;
+}
+
+button,
+input,
+select,
+textarea{
+  font:inherit;
+}
+
+.container{
+  width:min(var(--max),92%);
+  margin:auto;
+}
+
+.demo-bar{
+  background:var(--gold);
+  color:#101010;
+  text-align:center;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.9px;
+  padding:9px 15px;
+  text-transform:uppercase;
+}
+
+.header{
+  position:absolute;
+  top:36px;
+  left:0;
+  width:100%;
+  z-index:20;
+  padding:22px 0;
+}
+
+.nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-size:25px;
+  font-weight:950;
+  letter-spacing:-1px;
+}
+
+.logo span{
+  color:var(--gold);
+}
+
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:28px;
+  font-size:14px;
+  font-weight:700;
+}
+
+.nav-links a:not(.nav-cta):hover{
+  color:var(--gold);
+}
+
+.nav-cta,
+.btn-primary{
+  background:var(--gold);
+  color:#101010;
+  border:0;
+}
+
+.nav-cta{
+  padding:12px 19px;
+  border-radius:10px;
+}
+
+.menu-btn{
+  display:none;
+  background:none;
+  border:1px solid var(--line);
+  color:#fff;
+  border-radius:9px;
+  padding:8px 11px;
+  font-size:20px;
+}
+
+.hero{
+  min-height:820px;
+  display:flex;
+  align-items:center;
+  padding:150px 0 90px;
+  position:relative;
+  overflow:hidden;
+
+  background:
+  linear-gradient(
+    90deg,
+    rgba(4,5,6,.96) 12%,
+    rgba(4,5,6,.80) 48%,
+    rgba(4,5,6,.34)
+  ),
+  url("https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=2200&q=88")
+  center/cover;
+}
+
+.hero:after{
+  content:"";
+  position:absolute;
+  inset:auto 0 0;
+  height:130px;
+  background:linear-gradient(transparent,var(--bg));
+  pointer-events:none;
+}
+
+.hero-content{
+  position:relative;
+  z-index:1;
+  max-width:760px;
+}
+
+.eyebrow{
+  color:var(--gold);
+  font-size:12px;
+  font-weight:950;
+  letter-spacing:2.4px;
+  text-transform:uppercase;
+  margin-bottom:18px;
+}
+
+h1{
+  font-size:clamp(48px,7vw,84px);
+  line-height:.98;
+  letter-spacing:-4px;
+  max-width:800px;
+  margin-bottom:24px;
+}
+
+.hero p{
+  font-size:19px;
+  color:#c9ccd0;
+  max-width:650px;
+  margin-bottom:32px;
+}
+
+.actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:52px;
+  padding:14px 22px;
+  border-radius:10px;
+  font-weight:900;
+  transition:.2s;
+  border:1px solid #555;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+}
+
+.btn-outline{
+  background:rgba(0,0,0,.3);
+  color:#fff;
+}
+
+.hero-note{
+  display:flex;
+  gap:24px;
+  flex-wrap:wrap;
+  margin-top:30px;
+  color:#c8cbd0;
+  font-size:13px;
+}
+
+.hero-note span:before{
+  content:"✓";
+  color:var(--gold);
+  font-weight:900;
+  margin-right:7px;
+}
+
+section{
+  padding:100px 0;
+}
+
+.section-head{
+  max-width:720px;
+  margin-bottom:46px;
+}
+
+.section-head h2{
+  font-size:clamp(35px,5vw,58px);
+  line-height:1.02;
+  letter-spacing:-2.5px;
+  margin-bottom:16px;
+}
+
+.section-head p{
+  color:var(--muted);
+  font-size:17px;
+}
+
+.services{
+  background:#0d0f11;
+}
+
+.grid4{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+}
+
+.card{
+  background:var(--panel2);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:27px;
+  transition:.25s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  border-color:#65541b;
+}
+
+.num{
+  color:var(--gold);
+  font-weight:950;
+  font-size:12px;
+  letter-spacing:1px;
+  margin-bottom:32px;
+}
+
+.card h3{
+  font-size:20px;
+  margin-bottom:10px;
+}
+
+.card p{
+  color:#9fa4aa;
+  font-size:14px;
+}
+
+.icon{
+  width:45px;
+  height:45px;
+  border-radius:12px;
+  background:#242116;
+  color:var(--gold);
+  display:grid;
+  place-items:center;
+  margin-bottom:18px;
+  font-weight:950;
+}
+
+.split{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:70px;
+  align-items:center;
+}
+
+.photo{
+  min-height:550px;
+  border-radius:24px;
+
+  background:
+  linear-gradient(
+    180deg,
+    rgba(0,0,0,.05),
+    rgba(0,0,0,.35)
+  ),
+  url("https://images.unsplash.com/photo-1605559424843-9e4c228bf1c3?auto=format&fit=crop&w=1300&q=88")
+  center/cover;
+}
+
+.checks{
+  list-style:none;
+  margin-top:28px;
+}
+
+.checks li{
+  padding:15px 0;
+  border-bottom:1px solid var(--line);
+  color:#d9dce0;
+}
+
+.checks li:before{
+  content:"✓";
+  color:var(--gold);
+  font-weight:950;
+  margin-right:12px;
+}
+
+.process{
+  background:#0d0f11;
+}
+
+.steps{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+}
+
+.step{
+  border-top:2px solid #34383d;
+  padding-top:24px;
+}
+
+.step strong{
+  color:var(--gold);
+  font-size:13px;
+}
+
+.step h3{
+  margin:9px 0;
+}
+
+.step p{
+  color:var(--muted);
+  font-size:14px;
+}
+
+.packages{
+  background:#101214;
+}
+
+.pricing{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.price-card{
+  background:#17191c;
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:34px;
+  position:relative;
+}
+
+.price-card.featured{
+  border-color:var(--gold);
+  box-shadow:0 15px 50px rgba(246,197,50,.08);
+}
+
+.badge{
+  position:absolute;
+  right:20px;
+  top:20px;
+  background:var(--gold);
+  color:#111;
+  padding:6px 9px;
+  border-radius:20px;
+  font-size:10px;
+  font-weight:950;
+}
+
+.price-label{
+  color:var(--gold);
+  font-size:12px;
+  font-weight:950;
+  text-transform:uppercase;
+  letter-spacing:1.4px;
+}
+
+.price-card h3{
+  font-size:28px;
+  margin:10px 0;
+}
+
+.price{
+  font-size:38px;
+  font-weight:950;
+  margin-bottom:18px;
+}
+
+.price-card ul{
+  list-style:none;
+  color:#b9bdc2;
+  margin-bottom:28px;
+}
+
+.price-card li{
+  margin:11px 0;
+}
+
+.price-card li:before{
+  content:"✓";
+  color:var(--gold);
+  margin-right:9px;
+}
+
+.small{
+  color:#858a91;
+  font-size:12px;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  gap:14px;
+}
+
+.gallery-item{
+  min-height:240px;
+  border-radius:18px;
+  background-size:cover;
+  background-position:center;
+}
+
+.gallery .large{
+  grid-row:span 2;
+  min-height:494px;
+}
+
+.g1{
+  background-image:url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1400&q=88");
+}
+
+.g2{
+  background-image:url("https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=900&q=88");
+}
+
+.g3{
+  background-image:url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=88");
+}
+
+.g4{
+  background-image:url("https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=900&q=88");
+}
+
+.booking{
+  background:
+  linear-gradient(
+    90deg,
+    rgba(5,6,7,.97),
+    rgba(5,6,7,.89)
+  ),
+  url("https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=2000&q=88")
+  center/cover;
+}
+
+.booking-grid{
+  display:grid;
+  grid-template-columns:.8fr 1.2fr;
+  gap:55px;
+  align-items:start;
+}
+
+.booking-copy h2{
+  font-size:clamp(38px,5vw,62px);
+  line-height:1.02;
+  letter-spacing:-2.5px;
+  margin-bottom:17px;
+}
+
+.booking-copy p{
+  color:var(--muted);
+  font-size:16px;
+}
+
+.contact-points{
+  margin-top:28px;
+  display:grid;
+  gap:12px;
+}
+
+.contact-points a{
+  color:#ddd;
+}
+
+.contact-points a:hover{
+  color:var(--gold);
+}
+
+.form{
+  background:rgba(17,19,21,.92);
+  border:1px solid #30343a;
+  border-radius:20px;
+  padding:28px;
+  backdrop-filter:blur(8px);
+}
+
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+
+.field{
+  display:grid;
+  gap:7px;
+}
+
+.field.full{
+  grid-column:1/-1;
+}
+
+label{
+  font-size:12px;
+  font-weight:800;
+  color:#cfd2d6;
+}
+
+input,
+select,
+textarea{
+  width:100%;
+  background:#0c0e10;
+  border:1px solid #34383e;
+  color:#fff;
+  border-radius:9px;
+  padding:13px 14px;
+  outline:none;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+  border-color:var(--gold);
+}
+
+textarea{
+  min-height:105px;
+  resize:vertical;
+}
+
+.form .btn{
+  width:100%;
+  margin-top:15px;
+  cursor:pointer;
+}
+
+.form-note{
+  color:#777d84;
+  font-size:11px;
+  margin-top:10px;
+  text-align:center;
+}
+
+.faq{
+  background:#0d0f11;
+}
+
+.faq-list{
+  max-width:850px;
+}
+
+.faq-item{
+  border-bottom:1px solid var(--line);
+}
+
+.faq-q{
+  width:100%;
+  background:none;
+  border:0;
+  color:#fff;
+  text-align:left;
+  padding:22px 0;
+  font-weight:800;
+  cursor:pointer;
+  display:flex;
+  justify-content:space-between;
+}
+
+.faq-a{
+  display:none;
+  color:var(--muted);
+  padding:0 30px 20px 0;
+  font-size:14px;
+}
+
+.faq-item.open .faq-a{
+  display:block;
+}
+
+.faq-q span{
+  color:var(--gold);
+  font-size:20px;
+}
+
+.final-cta{
+  text-align:center;
+  padding:95px 0;
+  background:var(--gold);
+  color:#101010;
+}
+
+.final-cta h2{
+  font-size:clamp(35px,5vw,56px);
+  letter-spacing:-2px;
+  line-height:1.05;
+}
+
+.final-cta p{
+  max-width:620px;
+  margin:14px auto 25px;
+  color:#27220e;
+}
+
+.final-cta .btn{
+  border-color:#101010;
+  background:#101010;
+  color:#fff;
+}
+
+footer{
+  padding:50px 0;
+  background:#050607;
+  border-top:1px solid #1d2024;
+}
+
+.footer-grid{
+  display:grid;
+  grid-template-columns:1.4fr 1fr 1fr;
+  gap:35px;
+}
+
+.footer-title{
+  font-weight:900;
+  font-size:20px;
+}
+
+.footer-title span{
+  color:var(--gold);
+}
+
+.footer-text{
+  color:#858b92;
+  font-size:13px;
+  margin-top:9px;
+}
+
+.footer-links{
+  display:grid;
+  gap:8px;
+  color:#9da2a8;
+  font-size:13px;
+}
+
+.footer-links a:hover{
+  color:var(--gold);
+}
+
+.copyright{
+  margin-top:38px;
+  padding-top:20px;
+  border-top:1px solid #1c1f23;
+  color:#646a71;
+  font-size:11px;
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+@media(max-width:950px){
+
+  .nav-links{
+    display:none;
+  }
+
+  .menu-btn{
+    display:block;
+  }
+
+  .nav-links.mobile{
+    display:flex;
+    position:fixed;
+    inset:78px 4% auto;
+    background:#101214;
+    border:1px solid var(--line);
+    padding:20px;
+    border-radius:16px;
+    flex-direction:column;
+    align-items:stretch;
+    gap:5px;
+  }
+
+  .nav-links.mobile a{
+    padding:12px;
+  }
+
+  .grid4{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .split,
+  .booking-grid{
+    grid-template-columns:1fr;
+    gap:35px;
+  }
+
+  .photo{
+    min-height:420px;
+  }
+
+  .steps{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .pricing{
+    grid-template-columns:1fr;
+  }
+
+  .price-card.featured{
+    transform:none;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media(max-width:620px){
+
+  .container{
+    width:min(92%,520px);
+  }
+
+  section{
+    padding:72px 0;
+  }
+
+  .demo-bar{
+    font-size:10px;
+  }
+
+  .header{
+    top:32px;
+    padding:17px 0;
+  }
+
+  .logo{
+    font-size:21px;
+  }
+
+  .hero{
+    min-height:760px;
+    padding:140px 0 75px;
+  }
+
+  h1{
+    font-size:48px;
+    letter-spacing:-2.7px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  .hero-note{
+    display:grid;
+    gap:8px;
+  }
+
+  .grid4,
+  .steps,
+  .form-grid,
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+
+  .photo{
+    min-height:330px;
+  }
+
+  .gallery{
+    grid-template-columns:1fr;
+  }
+
+  .gallery .large{
+    min-height:300px;
+  }
+
+  .gallery-item{
+    min-height:230px;
+  }
+
+  .form{
+    padding:20px;
+  }
+
+  .booking-grid{
+    gap:25px;
+  }
+
+  .final-cta{
+    padding:75px 0;
+  }
+}
+</style>
 </head>
 
 <body>
 
-  <div class="demo-bar">
-    DEMO WEBSITE — SAMPLE PROJECT CREATED BY DETAILSFLOW AGENCY
+<div class="demo-bar">
+  DEMO WEBSITE — SAMPLE PROJECT CREATED BY DETAILSFLOW AGENCY
+</div>
+
+<header class="header">
+
+  <div class="container nav">
+
+    <a href="#top" class="logo">
+      DALLAS <span>SHINE</span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+      ☰
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+
+      <a href="#services">Services</a>
+
+      <a href="#process">How It Works</a>
+
+      <a href="#packages">Packages</a>
+
+      <a href="#gallery">Gallery</a>
+
+      <a href="#faq">FAQ</a>
+
+      <a href="#booking" class="nav-cta">
+        Book Now
+      </a>
+
+    </nav>
+
   </div>
 
-  <header>
-    <nav>
-      <a href="#" class="logo">DALLAS <span>SHINE</span></a>
+</header>
 
-      <div class="nav-links">
-        <a href="#services">Services</a>
-        <a href="#packages">Packages</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact" class="nav-btn">Book Now</a>
-      </div>
-    </nav>
-  </header>
+<main id="top">
 
-  <main>
+<!-- HERO -->
 
-    <section class="hero">
-      <div class="hero-content">
-        <div class="eyebrow">Mobile Car Detailing • Dallas, TX</div>
+<section class="hero">
 
-        <h1>
-          Your Car Deserves a Professional Shine.
-        </h1>
+  <div class="container hero-content">
 
-        <p>
-          Premium mobile car detailing brought directly to your home,
-          office, or driveway. Professional care. Convenient service.
-          Outstanding results.
-        </p>
+    <div class="eyebrow">
+      Mobile Car Detailing • Dallas, Texas
+    </div>
 
-        <div class="buttons">
-          <a href="#contact" class="btn btn-primary">Book Your Detail</a>
-          <a href="tel:+12145550188" class="btn btn-secondary">Call (214) 555-0188</a>
-        </div>
-      </div>
-    </section>
+    <h1>
+      Your Car Deserves a Professional Shine.
+    </h1>
 
-    <section class="services" id="services">
-      <div class="container">
+    <p>
+      Premium mobile detailing brought to your home, office, or driveway.
+      Simple booking, careful workmanship, and a finish you can be proud of.
+    </p>
 
-        <div class="section-heading">
-          <div class="eyebrow">Our Services</div>
-          <h2>Professional detailing without the hassle.</h2>
-          <p>
-            From a quick refresh to complete vehicle restoration,
-            we bring professional detailing directly to you.
-          </p>
-        </div>
+    <div class="actions">
 
-        <div class="service-grid">
+      <a href="#booking" class="btn btn-primary">
+        Request an Appointment
+      </a>
 
-          <div class="service">
-            <div class="service-number">01</div>
-            <h3>Interior Detail</h3>
-            <p>
-              Deep cleaning for seats, carpets, mats, dashboard,
-              doors and hard-to-reach areas.
-            </p>
-          </div>
+      <a href="tel:+12145550188" class="btn btn-outline">
+        Call (214) 555-0188
+      </a>
 
-          <div class="service">
-            <div class="service-number">02</div>
-            <h3>Exterior Detail</h3>
-            <p>
-              Hand wash, wheels, tires, paint cleaning and a
-              professional finish.
-            </p>
-          </div>
+    </div>
 
-          <div class="service">
-            <div class="service-number">03</div>
-            <h3>Full Detail</h3>
-            <p>
-              Complete interior and exterior treatment for a
-              fresh, showroom-inspired finish.
-            </p>
-          </div>
+    <div class="hero-note">
 
-          <div class="service">
-            <div class="service-number">04</div>
-            <h3>Ceramic Coating</h3>
-            <p>
-              Long-lasting paint protection with enhanced gloss
-              and easier maintenance.
-            </p>
-          </div>
+      <span>Mobile service</span>
+      <span>Professional care</span>
+      <span>Sample pricing</span>
 
-        </div>
-      </div>
-    </section>
+    </div>
 
-    <section class="why">
-      <div class="container why-grid">
+  </div>
 
-        <div class="why-image"></div>
+</section>
 
-        <div>
-          <div class="eyebrow">Why Dallas Shine</div>
 
-          <h2>
-            We bring the detail shop to you.
-          </h2>
+<!-- SERVICES -->
 
-          <p style="color:#aeb0b5; margin-top:18px;">
-            Your schedule is busy. That's why our mobile detailing
-            service comes directly to your location.
-          </p>
+<section class="services" id="services">
 
-          <ul class="check-list">
-            <li>Convenient mobile service</li>
-            <li>Professional detailing equipment</li>
-            <li>Experienced detail specialists</li>
-            <li>Premium products and careful techniques</li>
-            <li>Easy online booking</li>
-          </ul>
-        </div>
+<div class="container">
 
-      </div>
-    </section>
+  <div class="section-head">
 
-    <section class="packages" id="packages">
-      <div class="container">
+    <div class="eyebrow">
+      Our Services
+    </div>
 
-        <div class="section-heading">
-          <div class="eyebrow">Sample Packages</div>
-          <h2>Choose the right level of care.</h2>
-          <p>
-            Flexible detailing packages designed for different
-            vehicle conditions and customer needs.
-          </p>
-        </div>
+    <h2>
+      Professional detailing without the hassle.
+    </h2>
 
-        <div class="package-grid">
+    <p>
+      From a maintenance refresh to deeper vehicle care,
+      choose the service that fits your vehicle and your schedule.
+    </p>
 
-          <div class="package">
-            <div class="package-label">Essential</div>
-            <h3>Refresh Detail</h3>
-            <div class="price">$149+</div>
+  </div>
 
-            <ul>
-              <li>Exterior hand wash</li>
-              <li>Wheel & tire cleaning</li>
-              <li>Interior vacuum</li>
-              <li>Dashboard wipe-down</li>
-            </ul>
 
-            <a href="#contact" class="btn btn-secondary">Book Package</a>
-          </div>
+  <div class="grid4">
 
-          <div class="package featured">
-            <div class="package-label">Most Popular</div>
-            <h3>Full Detail</h3>
-            <div class="price">$249+</div>
+    <article class="card">
 
-            <ul>
-              <li>Complete exterior detail</li>
-              <li>Deep interior cleaning</li>
-              <li>Seats & carpet treatment</li>
-              <li>Paint protection</li>
-            </ul>
-
-            <a href="#contact" class="btn btn-primary">Book Package</a>
-          </div>
-
-          <div class="package">
-            <div class="package-label">Premium</div>
-            <h3>Signature Detail</h3>
-            <div class="price">$399+</div>
-
-            <ul>
-              <li>Full interior restoration</li>
-              <li>Paint decontamination</li>
-              <li>Premium protection</li>
-              <li>Final inspection</li>
-            </ul>
-
-            <a href="#contact" class="btn btn-secondary">Book Package</a>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section id="gallery">
-      <div class="container">
-
-        <div class="section-heading">
-          <div class="eyebrow">Our Work</div>
-          <h2>Clean cars. Serious attention to detail.</h2>
-          <p>
-            Sample gallery for this demo website.
-          </p>
-        </div>
-
-        <div class="gallery">
-          <div class="large g1"></div>
-          <div class="g2"></div>
-          <div class="g3"></div>
-          <div class="g4"></div>
-        </div>
-
-      </div>
-    </section>
-
-    <section class="cta" id="contact">
-      <div class="container">
-
-        <div class="eyebrow">Ready for a cleaner car?</div>
-
-        <h2>Book your detail today.</h2>
-
-        <p>
-          Tell us about your vehicle and preferred service.
-          We'll help you choose the right detailing package.
-        </p>
-
-        <div class="buttons" style="justify-content:center;">
-          <a href="mailto:demo@dallasshine.example" class="btn btn-primary">
-            Request an Appointment
-          </a>
-
-          <a href="tel:+12145550188" class="btn btn-secondary">
-            Call (214) 555-0188
-          </a>
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <div class="footer-inner">
-
-      <div>
-        <div class="logo">DALLAS <span>SHINE</span></div>
-        <div class="footer-text">
-          Professional Mobile Car Detailing • Dallas, Texas
-        </div>
+      <div class="icon">
+        01
       </div>
 
-      <div class="footer-text">
-        Demo website — sample project by DetailsFlow Agency
+      <h3>
+        Interior Detail
+      </h3>
+
+      <p>
+        Vacuuming, surface cleaning, seats, carpets,
+        mats, doors and hard-to-reach areas.
+      </p>
+
+    </article>
+
+
+    <article class="card">
+
+      <div class="icon">
+        02
+      </div>
+
+      <h3>
+        Exterior Detail
+      </h3>
+
+      <p>
+        Hand wash, wheels, tires, paint cleaning
+        and a clean, polished finish.
+      </p>
+
+    </article>
+
+
+    <article class="card">
+
+      <div class="icon">
+        03
+      </div>
+
+      <h3>
+        Full Detail
+      </h3>
+
+      <p>
+        A complete interior and exterior service
+        for a refreshed, showroom-inspired result.
+      </p>
+
+    </article>
+
+
+    <article class="card">
+
+      <div class="icon">
+        04
+      </div>
+
+      <h3>
+        Ceramic Coating
+      </h3>
+
+      <p>
+        Paint protection designed to add gloss
+        and make ongoing maintenance easier.
+      </p>
+
+    </article>
+
+  </div>
+
+</div>
+
+</section>
+
+
+<!-- WHY US -->
+
+<section>
+
+<div class="container split">
+
+  <div class="photo"></div>
+
+
+  <div>
+
+    <div class="eyebrow">
+      Why Dallas Shine
+    </div>
+
+    <h2>
+      We bring the detail shop to you.
+    </h2>
+
+    <p style="color:var(--muted);margin-top:18px">
+
+      Your schedule is busy. A mobile detailing service
+      removes the extra trip and brings vehicle care
+      directly to your location.
+
+    </p>
+
+
+    <ul class="checks">
+
+      <li>
+        Convenient mobile service
+      </li>
+
+      <li>
+        Professional detailing equipment
+      </li>
+
+      <li>
+        Careful, consistent techniques
+      </li>
+
+      <li>
+        Premium products and attention to detail
+      </li>
+
+      <li>
+        Simple online appointment request
+      </li>
+
+    </ul>
+
+  </div>
+
+</div>
+
+</section>
+
+
+<!-- PROCESS -->
+
+<section class="process" id="process">
+
+<div class="container">
+
+  <div class="section-head">
+
+    <div class="eyebrow">
+      How It Works
+    </div>
+
+    <h2>
+      A simple process from request to finished vehicle.
+    </h2>
+
+    <p>
+      A clear customer journey helps turn website visitors
+      into organized appointment requests.
+    </p>
+
+  </div>
+
+
+  <div class="steps">
+
+    <article class="step">
+
+      <strong>
+        01
+      </strong>
+
+      <h3>
+        Request
+      </h3>
+
+      <p>
+        Tell us about your vehicle and preferred service.
+      </p>
+
+    </article>
+
+
+    <article class="step">
+
+      <strong>
+        02
+      </strong>
+
+      <h3>
+        Confirm
+      </h3>
+
+      <p>
+        Review service details, timing and vehicle-specific needs.
+      </p>
+
+    </article>
+
+
+    <article class="step">
+
+      <strong>
+        03
+      </strong>
+
+      <h3>
+        Detail
+      </h3>
+
+      <p>
+        Our detail team completes the agreed service
+        at your location.
+      </p>
+
+    </article>
+
+
+    <article class="step">
+
+      <strong>
+        04
+      </strong>
+
+      <h3>
+        Enjoy
+      </h3>
+
+      <p>
+        Inspect the finished vehicle and keep it looking its best.
+      </p>
+
+    </article>
+
+  </div>
+
+</div>
+
+</section>
+
+
+<!-- PACKAGES -->
+
+<section class="packages" id="packages">
+
+<div class="container">
+
+  <div class="section-head">
+
+    <div class="eyebrow">
+      Sample Packages
+    </div>
+
+    <h2>
+      Choose the right level of care.
+    </h2>
+
+    <p>
+      These prices are examples for this demo project.
+      A real business would replace them with its approved pricing.
+    </p>
+
+  </div>
+
+
+  <div class="pricing">
+
+
+    <article class="price-card">
+
+      <div class="price-label">
+        Essential
+      </div>
+
+      <h3>
+        Refresh Detail
+      </h3>
+
+      <div class="price">
+        $149+
+      </div>
+
+      <ul>
+
+        <li>
+          Exterior hand wash
+        </li>
+
+        <li>
+          Wheel & tire cleaning
+        </li>
+
+        <li>
+          Interior vacuum
+        </li>
+
+        <li>
+          Dashboard wipe-down
+        </li>
+
+      </ul>
+
+      <a href="#booking" class="btn btn-outline">
+        Request Package
+      </a>
+
+    </article>
+
+
+    <article class="price-card featured">
+
+      <div class="badge">
+        MOST POPULAR
+      </div>
+
+      <div class="price-label">
+        Complete
+      </div>
+
+      <h3>
+        Full Detail
+      </h3>
+
+      <div class="price">
+        $249+
+      </div>
+
+      <ul>
+
+        <li>
+          Complete exterior detail
+        </li>
+
+        <li>
+          Deep interior cleaning
+        </li>
+
+        <li>
+          Seats & carpet treatment
+        </li>
+
+        <li>
+          Paint protection
+        </li>
+
+      </ul>
+
+      <a href="#booking" class="btn btn-primary">
+        Request Package
+      </a>
+
+    </article>
+
+
+    <article class="price-card">
+
+      <div class="price-label">
+        Premium
+      </div>
+
+      <h3>
+        Signature Detail
+      </h3>
+
+      <div class="price">
+        $399+
+      </div>
+
+      <ul>
+
+        <li>
+          Full interior restoration
+        </li>
+
+        <li>
+          Paint decontamination
+        </li>
+
+        <li>
+          Premium protection
+        </li>
+
+        <li>
+          Final inspection
+        </li>
+
+      </ul>
+
+      <a href="#booking" class="btn btn-outline">
+        Request Package
+      </a>
+
+    </article>
+
+
+  </div>
+
+
+  <p class="small" style="margin-top:15px">
+
+    * Sample/demo pricing only. Final pricing can vary by
+    vehicle size, condition and requested services.
+
+  </p>
+
+</div>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section id="gallery">
+
+<div class="container">
+
+  <div class="section-head">
+
+    <div class="eyebrow">
+      Sample Gallery
+    </div>
+
+    <h2>
+      Clean cars. Serious attention to detail.
+    </h2>
+
+    <p>
+      Visual examples for this demo website.
+      A real business would replace these with its own authorized work photos.
+    </p>
+
+  </div>
+
+
+  <div class="gallery">
+
+    <div class="gallery-item large g1"></div>
+
+    <div class="gallery-item g2"></div>
+
+    <div class="gallery-item g3"></div>
+
+    <div class="gallery-item g4"></div>
+
+  </div>
+
+</div>
+
+</section>
+
+
+<!-- BOOKING -->
+
+<section class="booking" id="booking">
+
+<div class="container booking-grid">
+
+
+  <div class="booking-copy">
+
+    <div class="eyebrow">
+      Request an Appointment
+    </div>
+
+    <h2>
+      Ready for a cleaner car?
+    </h2>
+
+    <p>
+
+      Send a request with your vehicle details and preferred service.
+      This demo form shows how a real detailing website can capture
+      and organize new leads.
+
+    </p>
+
+
+    <div class="contact-points">
+
+      <a href="tel:+12145550188">
+        ☎ (214) 555-0188
+      </a>
+
+      <a href="mailto:demo@dallasshine.example">
+        ✉ demo@dallasshine.example
+      </a>
+
+      <span style="color:#858b92;font-size:13px">
+        📍 Dallas, Texas
+      </span>
+
+    </div>
+
+  </div>
+
+
+  <form class="form" id="bookingForm">
+
+    <div class="form-grid">
+
+
+      <div class="field">
+
+        <label for="name">
+          Full Name
+        </label>
+
+        <input
+          id="name"
+          name="name"
+          required
+          placeholder="John Smith"
+        >
+
+      </div>
+
+
+      <div class="field">
+
+        <label for="phone">
+          Phone
+        </label>
+
+        <input
+          id="phone"
+          name="phone"
+          required
+          placeholder="(214) 555-0123"
+        >
+
+      </div>
+
+
+      <div class="field">
+
+        <label for="email">
+          Email
+        </label>
+
+        <input
+          id="email"
+          name="email"
+          type="email"
+          required
+          placeholder="john@example.com"
+        >
+
+      </div>
+
+
+      <div class="field">
+
+        <label for="vehicle">
+          Vehicle
+        </label>
+
+        <input
+          id="vehicle"
+          name="vehicle"
+          required
+          placeholder="2024 BMW X5"
+        >
+
+      </div>
+
+
+      <div class="field">
+
+        <label for="service">
+          Service
+        </label>
+
+        <select
+          id="service"
+          name="service"
+          required
+        >
+
+          <option value="">
+            Select a service
+          </option>
+
+          <option>
+            Interior Detail
+          </option>
+
+          <option>
+            Exterior Detail
+          </option>
+
+          <option>
+            Full Detail
+          </option>
+
+          <option>
+            Ceramic Coating
+          </option>
+
+        </select>
+
+      </div>
+
+
+      <div class="field">
+
+        <label for="date">
+          Preferred Date
+        </label>
+
+        <input
+          id="date"
+          name="date"
+          type="date"
+        >
+
+      </div>
+
+
+      <div class="field full">
+
+        <label for="message">
+          Vehicle Notes
+        </label>
+
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Tell us about the vehicle, condition, location, or anything else we should know."
+        ></textarea>
+
+      </div>
+
+
+    </div>
+
+
+    <button
+      class="btn btn-primary"
+      type="submit"
+    >
+      Send Appointment Request
+    </button>
+
+
+    <div class="form-note">
+      Demo form — no real appointment is being created.
+    </div>
+
+  </form>
+
+</div>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section class="faq" id="faq">
+
+<div class="container">
+
+  <div class="section-head">
+
+    <div class="eyebrow">
+      FAQ
+    </div>
+
+    <h2>
+      Questions customers usually ask.
+    </h2>
+
+  </div>
+
+
+  <div class="faq-list">
+
+
+    <div class="faq-item">
+
+      <button class="faq-q">
+
+        Do you come to my home or office?
+
+        <span>+</span>
+
+      </button>
+
+      <div class="faq-a">
+
+        Yes. This demo is positioned as a mobile detailing service.
+        A real business would define its exact service area
+        and location requirements.
+
       </div>
 
     </div>
-  </footer>
+
+
+    <div class="faq-item">
+
+      <button class="faq-q">
+
+        How long does a detail take?
+
+        <span>+</span>
+
+      </button>
+
+      <div class="faq-a">
+
+        Timing depends on the service, vehicle size and condition.
+        The final duration should be confirmed when the appointment
+        is scheduled.
+
+      </div>
+
+    </div>
+
+
+    <div class="faq-item">
+
+      <button class="faq-q">
+
+        Can I request a specific package?
+
+        <span>+</span>
+
+      </button>
+
+      <div class="faq-a">
+
+        Yes. Customers can select a package in the request form,
+        and the business can confirm the final service after
+        reviewing the vehicle details.
+
+      </div>
+
+    </div>
+
+
+    <div class="faq-item">
+
+      <button class="faq-q">
+
+        Are the prices fixed?
+
+        <span>+</span>
+
+      </button>
+
+      <div class="faq-a">
+
+        The prices shown here are sample/demo prices.
+        A real website should use the business owner's approved
+        pricing and clearly explain any vehicle-size or
+        condition adjustments.
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</div>
+
+</section>
+
+
+<!-- FINAL CTA -->
+
+<section class="final-cta">
+
+<div class="container">
+
+  <div class="eyebrow" style="color:#25200b">
+    Mobile detailing made simple
+  </div>
+
+  <h2>
+    Give your vehicle the attention it deserves.
+  </h2>
+
+  <p>
+    Request an appointment and tell us what your vehicle needs.
+  </p>
+
+  <a href="#booking" class="btn">
+    Request an Appointment
+  </a>
+
+</div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container">
+
+  <div class="footer-grid">
+
+
+    <div>
+
+      <div class="footer-title">
+        DALLAS <span>SHINE</span>
+      </div>
+
+      <div class="footer-text">
+        Professional Mobile Car Detailing • Dallas, Texas
+      </div>
+
+    </div>
+
+
+    <div>
+
+      <div
+        class="footer-text"
+        style="margin-bottom:10px;color:#fff;font-weight:800"
+      >
+        Explore
+      </div>
+
+      <div class="footer-links">
+
+        <a href="#services">
+          Services
+        </a>
+
+        <a href="#process">
+          How It Works
+        </a>
+
+        <a href="#packages">
+          Packages
+        </a>
+
+        <a href="#gallery">
+          Gallery
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div>
+
+      <div
+        class="footer-text"
+        style="margin-bottom:10px;color:#fff;font-weight:800"
+      >
+        Contact
+      </div>
+
+      <div class="footer-links">
+
+        <a href="#booking">
+          Request an Appointment
+        </a>
+
+        <a href="tel:+12145550188">
+          (214) 555-0188
+        </a>
+
+        <a href="mailto:demo@dallasshine.example">
+          demo@dallasshine.example
+        </a>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  <div class="copyright">
+
+    <span>
+      © 2026 Dallas Shine — Demo Website
+    </span>
+
+    <span>
+      Sample project created by DetailsFlow Agency
+    </span>
+
+  </div>
+
+</div>
+
+</footer>
+
+
+<script>
+
+const menuBtn =
+  document.getElementById("menuBtn");
+
+const nav =
+  document.getElementById("navLinks");
+
+
+menuBtn.addEventListener("click",()=>{
+
+  nav.classList.toggle("mobile");
+
+  document.body.classList.toggle("menu-open");
+
+});
+
+
+nav.querySelectorAll("a").forEach(a=>{
+
+  a.addEventListener("click",()=>{
+
+    nav.classList.remove("mobile");
+
+    document.body.classList.remove("menu-open");
+
+  });
+
+});
+
+
+document.querySelectorAll(".faq-q").forEach(btn=>{
+
+  btn.addEventListener("click",()=>{
+
+    const item =
+      btn.parentElement;
+
+    document
+      .querySelectorAll(".faq-item")
+      .forEach(x=>{
+
+        if(x!==item){
+          x.classList.remove("open");
+        }
+
+      });
+
+    item.classList.toggle("open");
+
+    btn.querySelector("span").textContent =
+      item.classList.contains("open")
+      ? "−"
+      : "+";
+
+  });
+
+});
+
+
+document
+  .getElementById("bookingForm")
+  .addEventListener("submit",e=>{
+
+    e.preventDefault();
+
+    const form =
+      new FormData(e.target);
+
+    const subject =
+      encodeURIComponent(
+        "Demo Appointment Request - "
+        + form.get("name")
+      );
+
+    const body =
+      encodeURIComponent(
+
+        "Name: "
+        + form.get("name")
+
+        + "\nPhone: "
+        + form.get("phone")
+
+        + "\nEmail: "
+        + form.get("email")
+
+        + "\nVehicle: "
+        + form.get("vehicle")
+
+        + "\nService: "
+        + form.get("service")
+
+        + "\nPreferred Date: "
+        + form.get("date")
+
+        + "\nNotes: "
+        + form.get("message")
+
+      );
+
+    alert(
+      "Demo request captured! In a real client website, this would be sent to the business CRM/email system."
+    );
+
+    window.location.href =
+      "mailto:demo@dallasshine.example"
+      + "?subject="
+      + subject
+      + "&body="
+      + body;
+
+  });
+
+</script>
 
 </body>
 </html>
